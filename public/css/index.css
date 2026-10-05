@@ -1,0 +1,67 @@
+/* Regular */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf');
+}
+
+/* Bold */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/IBM_Plex_Mono/IBMPlexMono-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('/fonts/IBM_Plex_Mono/IBMPlexMono-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(251, 247, 238);
+  color: rgb(31, 36, 40);
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', monospace;
+  /* New lines of code */
+  min-height: 100dvh; /* The page is at least as tall as the viewport (browser window) */
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* The main takes all the free space; the header and footer fit their content */
+  gap: 20px;
+}
+
+main {
+  max-width: 80ch;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+h1,
+p {
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 113, 114);
+}

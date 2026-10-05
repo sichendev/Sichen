@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  align-items: center; /* Centers the elements (horizontally here) perpendicular to the flex direction */
+  flex-direction: column; /* Each element is under the previous one */
+  gap: 10px;  /* Space between elements */
+}
+
+.header-title {
+  color: inherit; /* Same color as the page text */
+  font-size: 96px;
+}
+
+.header-navigation ul {
+  margin-left: 40px; /* Left margin set by eye so the menu looks more centered */
+  display: flex;
+  gap: 25px;
+}
+
+.header-navigation li {
+  list-style: none; /* Removes the list bullets */
+}
+
+.header-navigation a {
+  color: inherit;
+}
